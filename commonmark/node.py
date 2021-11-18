@@ -4,8 +4,8 @@ import re
 
 
 reContainer = re.compile(
-    r'(document|block_quote|list|item|paragraph|'
-    r'heading|emph|strong|link|image|'
+    r'(document|block_quote|list|item|paragraph|assertion|action|'
+    r'heading|title|purpose|step|substep|meta|emph|strong|action_verb|point_state|link|image|'
     r'custom_inline|custom_block)')
 
 

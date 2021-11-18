@@ -421,7 +421,7 @@ class InlineParser(object):
                         if use_delims == 1:
                             emph = Node('emph', None)
                         else:
-                            emph = Node('strong', None)
+                            emph = Node(('point_state', 'action_verb')[closercc == '*'], None)
 
                         tmp = opener_inl.nxt
                         while tmp and tmp != closer_inl:
